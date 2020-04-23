@@ -15,12 +15,5 @@ public class BasePage extends Page {
 		driver.findElement(locator).click();
 	}
 
-	public void doSendKeys(By locator, String text) {
-		driver.findElement(locator).sendKeys(text);
-	}
-
-	public String doGetText(By locator) {
-		return driver.findElement(locator).getText();
-	}
 
 }
